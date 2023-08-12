@@ -43,10 +43,7 @@ The results can be improved, probably the image segmentation method can be impro
 
 For the recognition of colors based on their R G B components, the web can be used https://www.rapidtables.com/web/color/RGB_Color.html
 
-
 Other references:
-
-
 
 https://medium.com/@rndayala/image-histograms-in-opencv-40ee5969a3b7
 
