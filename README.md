@@ -1,5 +1,5 @@
 # CarsColor
-project that from photos of cars, estimates its color based on the maximum values of the R G B histograms of the photo
+Project that from photos of cars, estimates its color based on the maximum values of the R G B histograms of the photo
 
 All necessary packages can be installed with a simple pip, if you get the message that you cannot import
 
@@ -23,21 +23,37 @@ It also produces the file CarColorResults.txt so that the results can be scored.
 The result has been:
 
 2122267,251,252,249,['"Snow"']
+
 6662GKS,25,24,28,['"Midnight Blue"']
+
 8544,20,31,39,['"Dark Jungle Green"']
+
 8544,254,255,255,['"White"']
+
 BMW,21,27,34,['"Dark Jungle Green"']
+
 CRAIG,249,211,123,['"Mellow Apricot"']
+
 CY110KS,200,201,203,['"Lilac"']
+
 DRUNK,6,26,100,['"Catalina Blue"']
+
 GCP332,0,131,255,['"Azure"']
+
 GN64OTP,254,254,0,['"Laser Lemon"']
+
 HF3461,14,14,16,['"Smoky Black"']
+
 J75665,182,8,8,['"International Orange (Engineering)"']
+
 J75665,8,8,8,['"Smoky Black"']
+
 LR33TEE,255,3,5,['"Red"']
+
 VIPER,214,95,24,['"Chocolate (Web)"']
+
 VIPER,100,104,107,['"Dim Gray"']
+
 
 The results can be improved, probably the image segmentation method can be improved. Improvements will be introduced in subsequent editions.
 
