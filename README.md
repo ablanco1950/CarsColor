@@ -4,11 +4,22 @@ Project that from photos of cars, estimates its color based on the maximum value
 All necessary packages can be installed with a simple pip, if you get the message that you cannot import
 
 The project uses the colors.csv file downloaded from https://github.com/codebrainz/color-names/blob/master/output/colors.csv
-
-It also uses the best.pt model that serves to frame the cars in the photos (to see details of its creation with yolov8 see the project
-https://github.com/ablanco1950/LicensePlate_Yolov8_MaxFilters)
-
 Unzip the Test1 file with the test images (obtained from Roboflow and Kaggle)
+Execute the python program:
+
+CarsColor_YoloV8n_Min_Distance.py
+
+The photos are shown, to test it, and after close them in console appears the r g b assigned by the max of histograms and the r g b and name of color aproximated in the list of colors in colors.csv.
+
+It also produces the file CarColorResults.txt so that the results can be scored.
+
+
+ Before 21/08/2019 there was a more complicated procedure that was abandoned after reading the issue https://medium.com/@shaw801796/your-first-object-detection-model-using-yolo-2e841547cc20 and see that yolov8n.pt is abble to detect cars and licenses plates
+
+OPERATION  BEFORE THE  21/08/2023
+
+It  used the best.pt model that serves to frame the cars in the photos (to see details of its creation with yolov8 see the project
+https://github.com/ablanco1950/LicensePlate_Yolov8_MaxFilters)
 
 Create the RandomForest model that from R G B values assigns the name of the color in the colors.csv file
 
