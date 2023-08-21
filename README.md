@@ -18,7 +18,7 @@ The photos are shown, to test it, and after close them in console appears the r 
 
 It also produces the file CarColorResults.txt so that the results can be scored.
 
- Before 21/08/2019 there was a more complicated procedure that was abandoned after reading the issue https://medium.com/@shaw801796/your-first-object-detection-model-using-yolo-2e841547cc20 and see that yolov8n.pt is abble to detect cars and licenses plates
+ Before 21/08/2019 there was a more complicated procedure that was abandoned after reading the recent article https://medium.com/@shaw801796/your-first-object-detection-model-using-yolo-2e841547cc20 and and test then that  yolov8n.pt is abble to detect cars and licenses plates
 
 OPERATION  BEFORE THE  21/08/2023
 
