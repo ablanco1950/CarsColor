@@ -1,7 +1,12 @@
 # CarsColor
 Project that from photos of cars, estimates its color based on the maximum values of the R G B histograms of the photo
 
-All necessary packages can be installed with a simple pip, if you get the message that you cannot import
+All necessary packages besides:
+ultralytics 
+cv2
+cvzone
+math
+can be installed with a simple pip, if you get the message that you cannot import it
 
 The project uses the colors.csv file downloaded from https://github.com/codebrainz/color-names/blob/master/output/colors.csv
 Unzip the Test1 file with the test images (obtained from Roboflow and Kaggle)
