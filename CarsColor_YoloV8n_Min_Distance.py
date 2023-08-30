@@ -21,10 +21,10 @@ Ini=time.time()
 
 from ultralytics import YOLO
 # from # https://medium.com/@shaw801796/your-first-object-detection-model-using-yolo-2e841547cc20
-#modified because is founded that Yolov8n also detect license plate a and car
-modelv8n = YOLO("yolov8n.pt")
+#modified because yolov8x.pt is more precise than yolov8n, but need more resources 
+modelv8n = YOLO("yolov8x.pt")
 class_names = [
-        "license plate", "car", "car", "motorcycle", "airplane", "bus", "train", "truck",
+        "person", "bicycle", "car", "motorcycle", "airplane", "bus", "train", "truck",
         "boat", "traffic light", "fire hydrant", "stop sign", "parking meter", "bench",
         "bird", "cat", "dog", "horse", "sheep", "cow", "elephant", "bear", "zebra",
         "giraffe", "backpack", "umbrella", "handbag", "tie", "suitcase", "frisbee", "skis",
@@ -100,7 +100,7 @@ def DetectCarWithYolov8n (img):
              x1,y1,x2,y2 = box.xyxy[0]
              x1, y1, x2, y2 = int(x1),int(y1),int(x2),int(y2)
              #print(x1,y1,x2,y2)
-             #cv2.rectangle(img,(x1,y1),(x2,y2),(255,0,255),3)
+             cv2.rectangle(img,(x1,y1),(x2,y2),(255,0,255),3)
             
              # crop image to center it           
              xoff= int((x2 - x1)*0.1)
@@ -120,11 +120,11 @@ def DetectCarWithYolov8n (img):
              #if conf < 0.85: continue
              cls = int(box.cls[0]) #converting the float to int so that the class name can be called
              #if class_names[cls] != "car" and class_names[cls] != "license plate": continue
-             if class_names[cls] != "car"  and class_names[cls] != "truck" and class_names[cls] != "bus": continue
-             #cvzone.putTextRect(img,f'{class_names[cls]}  {conf} ',(max(0,x1),max(35,y1)),scale=1,thickness=1)
+             #if class_names[cls] != "car"  and class_names[cls] != "truck" and class_names[cls] != "bus": continue
+             cvzone.putTextRect(img,f'{class_names[cls]}  {conf} ',(max(0,x1),max(35,y1)),scale=1,thickness=1)
 
-             #cv2.imshow("img", img)
-             #cv2.waitKey()
+             cv2.imshow("img", img)
+             cv2.waitKey()
              cropLicense=SalvaImg[y1:y2,x1:x2]
              
              cv2.imshow("Crop", cropLicense)
@@ -235,10 +235,15 @@ with open( "CarColorResults.txt" ,"w") as  w:
                  lineaw.append(str(R))
                  lineaw.append(str(G))
                  lineaw.append(str(B))
+                 lineaw.append(str(R_elected))
+                 lineaw.append(str(G_elected))
+                 lineaw.append(str(B_elected))
                  lineaw.append(NameColor)        
                  lineaWrite =','.join(lineaw)
                  lineaWrite=lineaWrite + "\n"
                  w.write(lineaWrite)         
-print ("seconds "+ str(time.time()-Ini))
+
+print ("seconds "+ str(round((time.time()-Ini),2)))
+ 
  
  
