@@ -2,14 +2,21 @@
 Project that from photos of cars, estimates its color based on the maximum values of the R G B histograms of the photo
 
 All necessary packages besides:
+
 ultralytics 
+
 cv2
+
 cvzone
+
 math
+
 can be installed with a simple pip, if you get the message that you cannot import it
 
 The project uses the colors.csv file downloaded from https://github.com/codebrainz/color-names/blob/master/output/colors.csv
+
 Unzip the Test1 file with the test images (obtained from Roboflow and Kaggle)
+
 Execute the python program:
 
 CarsColor_YoloV8n_Min_Distance.py
@@ -45,6 +52,7 @@ GCP332,24,131,255,30,144,255,"Dodger Blue"
 GN64OTP,254,254,254,255,255,255,"White"
 
 GN64OTP,1,1,1,0,0,0,"Black"                  (error)
+
 HF3461,15,14,15,16,12,8,"Smoky Black"
 
 LR33TEE,255,3,5,255,0,0,"Red"
@@ -53,7 +61,15 @@ VIPER,214,94,24,210,105,30,"Cocoa Brown"
 
  Before 21/08/2023 there was a more complicated procedure that was abandoned after reading the recent article https://medium.com/@shaw801796/your-first-object-detection-model-using-yolo-2e841547cc20  
 
+References:
 
+https://medium.com/@shaw801796/your-first-object-detection-model-using-yolo-2e841547cc20  
+
+https://medium.com/@rndayala/image-histograms-in-opencv-40ee5969a3b7
+
+https://github.com/CharansinghThakur/Color-Detection/blob/master/color_detection.py
+
+https://www.rapidtables.com/web/color/RGB_Color.html
 =======================================================================================================================
 OPERATION  BEFORE THE  21/08/2023
 
@@ -109,13 +125,7 @@ The results can be improved, probably the image segmentation method can be impro
 
 For the recognition of colors based on their R G B components, the web can be used https://www.rapidtables.com/web/color/RGB_Color.html
 
-References:
 
-https://medium.com/@rndayala/image-histograms-in-opencv-40ee5969a3b7
-
-https://github.com/CharansinghThakur/Color-Detection/blob/master/color_detection.py
-
-https://www.rapidtables.com/web/color/RGB_Color.html
 
 
 ===================================================================
