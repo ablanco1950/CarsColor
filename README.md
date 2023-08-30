@@ -18,8 +18,43 @@ The photos are shown, to test it, and after close them in console appears the r 
 
 It also produces the file CarColorResults.txt so that the results can be scored.
 
- Before 21/08/2019 there was a more complicated procedure that was abandoned after reading the recent article https://medium.com/@shaw801796/your-first-object-detection-model-using-yolo-2e841547cc20  and test then that  yolov8n.pt is abble to detect cars and licenses plates
+Appears the name of the photo  (it matches the license plate of the car) the rgb obtained by applying the maximum histogram of each RGB component and the approximate RGB in the list of colors in color.csv, as well as the name of this color
 
+The results may be tested with  https://www.rapidtables.com/web/color/RGB_Color.html
+
+2122267,251,252,249,255,250,250,"Snow"
+
+6662GKS,25,24,28,26,36,33,"Dark Jungle Green"
+
+8544,12,16,19,16,12,8,"Smoky Black"
+
+8544,254,255,255,255,255,255,"White"
+
+8544,254,255,255,255,255,255,"White"
+
+BMW,21,27,34,26,36,33,"Dark Jungle Green"
+
+CRAIG,249,211,123,248,222,126,"Mellow Yellow"
+
+CY110KS,200,201,203,196,195,208,"Lavender Gray"   (Error)
+
+DRUNK,8,26,100,0,35,102,"Royal Blue (Traditional)"
+
+GCP332,24,131,255,30,144,255,"Dodger Blue"
+
+GN64OTP,254,254,254,255,255,255,"White"
+
+GN64OTP,1,1,1,0,0,0,"Black"                  (error)
+HF3461,15,14,15,16,12,8,"Smoky Black"
+
+LR33TEE,255,3,5,255,0,0,"Red"
+
+VIPER,214,94,24,210,105,30,"Cocoa Brown"
+
+ Before 21/08/2023 there was a more complicated procedure that was abandoned after reading the recent article https://medium.com/@shaw801796/your-first-object-detection-model-using-yolo-2e841547cc20  and test then that  yolov8n.pt is abble to detect cars and licenses plates
+
+
+=====
 OPERATION  BEFORE THE  21/08/2023
 
 It  used the best.pt model that serves to frame the cars in the photos (to see details of its creation with yolov8 see the project
@@ -73,9 +108,13 @@ VIPER,100,104,107,['"Dim Gray"']
 The results can be improved, probably the image segmentation method can be improved. Improvements will be introduced in subsequent editions.
 
 For the recognition of colors based on their R G B components, the web can be used https://www.rapidtables.com/web/color/RGB_Color.html
+=====
 
-Other references:
+References:
 
 https://medium.com/@rndayala/image-histograms-in-opencv-40ee5969a3b7
 
 https://github.com/CharansinghThakur/Color-Detection/blob/master/color_detection.py
+
+https://www.rapidtables.com/web/color/RGB_Color.html
+
