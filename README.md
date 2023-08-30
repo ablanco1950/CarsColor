@@ -43,7 +43,7 @@ BMW,21,27,34,26,36,33,"Dark Jungle Green"
 
 CRAIG,249,211,123,248,222,126,"Mellow Yellow"
 
-CY110KS,200,201,203,196,195,208,"Lavender Gray"   (Error)
+CY110KS,200,201,203,196,195,208,"Lavender Gray"   (Error, the car looks white, perhaps the shadow)
 
 DRUNK,8,26,100,0,35,102,"Royal Blue (Traditional)"
 
@@ -51,7 +51,7 @@ GCP332,24,131,255,30,144,255,"Dodger Blue"
 
 GN64OTP,254,254,254,255,255,255,"White"
 
-GN64OTP,1,1,1,0,0,0,"Black"                  (error)
+GN64OTP,1,1,1,0,0,0,"Black"                  (error detection car)
 
 HF3461,15,14,15,16,12,8,"Smoky Black"
 
