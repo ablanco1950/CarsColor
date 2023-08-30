@@ -51,10 +51,10 @@ LR33TEE,255,3,5,255,0,0,"Red"
 
 VIPER,214,94,24,210,105,30,"Cocoa Brown"
 
- Before 21/08/2023 there was a more complicated procedure that was abandoned after reading the recent article https://medium.com/@shaw801796/your-first-object-detection-model-using-yolo-2e841547cc20  and test then that  yolov8n.pt is abble to detect cars and licenses plates
+ Before 21/08/2023 there was a more complicated procedure that was abandoned after reading the recent article https://medium.com/@shaw801796/your-first-object-detection-model-using-yolo-2e841547cc20  
 
 
-=====
+=======================================================================================================================
 OPERATION  BEFORE THE  21/08/2023
 
 It  used the best.pt model that serves to frame the cars in the photos (to see details of its creation with yolov8 see the project
@@ -108,7 +108,6 @@ VIPER,100,104,107,['"Dim Gray"']
 The results can be improved, probably the image segmentation method can be improved. Improvements will be introduced in subsequent editions.
 
 For the recognition of colors based on their R G B components, the web can be used https://www.rapidtables.com/web/color/RGB_Color.html
-=====
 
 References:
 
@@ -117,4 +116,8 @@ https://medium.com/@rndayala/image-histograms-in-opencv-40ee5969a3b7
 https://github.com/CharansinghThakur/Color-Detection/blob/master/color_detection.py
 
 https://www.rapidtables.com/web/color/RGB_Color.html
+
+
+===================================================================
+
 
