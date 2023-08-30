@@ -61,6 +61,8 @@ VIPER,214,94,24,210,105,30,"Cocoa Brown"
 
  Before 21/08/2023 there was a more complicated procedure that was abandoned after reading the recent article https://medium.com/@shaw801796/your-first-object-detection-model-using-yolo-2e841547cc20  
 
+Changing the name directory in line 11 of the programa, any directory with any cars fotos can be tested.
+
 References:
 
 https://medium.com/@shaw801796/your-first-object-detection-model-using-yolo-2e841547cc20  
