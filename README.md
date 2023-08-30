@@ -3,13 +3,13 @@ Project that from photos of cars, estimates its color based on the maximum value
 
 All necessary packages besides:
 
-ultralytics ,
+ultralytics 
 
-cv2.
+cv2
 
-cvzone,
+cvzone
 
-math,
+math
 
 can be installed with a simple pip, if you get the message that you cannot import it
 
