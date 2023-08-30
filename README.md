@@ -70,6 +70,8 @@ https://medium.com/@rndayala/image-histograms-in-opencv-40ee5969a3b7
 https://github.com/CharansinghThakur/Color-Detection/blob/master/color_detection.py
 
 https://www.rapidtables.com/web/color/RGB_Color.html
+
+
 =======================================================================================================================
 OPERATION  BEFORE THE  21/08/2023
 
