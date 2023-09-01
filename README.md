@@ -31,7 +31,7 @@ The results may be tested with  https://www.rapidtables.com/web/color/RGB_Color.
 
 2122267,251,252,249,255,250,250,"Snow"
 
-6662GKS,25,24,28,26,36,33,"Dark Jungle Green"
+6662GKS,25,24,28,26,36,33,"Dark Jungle Green" ( it should be "Midnight Blue", but the photo is inside a dark garage)
 
 8544,12,16,19,16,12,8,"Smoky Black"
 
