@@ -37,7 +37,7 @@ The results may be tested with  https://www.rapidtables.com/web/color/RGB_Color.
 
 8544,254,255,255,255,255,255,"White"
 
-8544,254,255,255,255,255,255,"White"
+8544,254,255,255,255,255,255,"White" ( Duplicate, the detection recognizes 8544 as car and truck at the same time)
 
 BMW,21,27,34,26,36,33,"Dark Jungle Green"
 
