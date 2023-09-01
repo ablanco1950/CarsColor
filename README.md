@@ -1,5 +1,5 @@
 # CarsColor
-Project that from photos of cars, estimates its color based on the maximum values of the R G B histograms of the photo
+Project that from photos of cars, estimates its detailed colors (not basic colors) based on the maximum values of the R G B histograms of the photo
 
 All necessary packages besides:
 
