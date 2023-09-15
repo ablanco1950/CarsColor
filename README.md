@@ -47,7 +47,7 @@ CY110KS,200,201,203,196,195,208,"Lavender Gray"   (Error, the car looks white, p
 
 DRUNK,8,26,100,0,35,102,"Royal Blue (Traditional)"
 
-GCP332,24,131,255,30,144,255,"Dodger Blue"
+GCP332,24,131,255,30,144,255,"Dodger Blue"      (Error)
 
 GN64OTP,254,254,254,255,255,255,"White"
 
@@ -62,6 +62,59 @@ VIPER,214,94,24,210,105,30,"Cocoa Brown"
  Before 21/08/2023 there was a more complicated procedure that was abandoned after reading the recent article https://medium.com/@shaw801796/your-first-object-detection-model-using-yolo-2e841547cc20  
 
 Changing the name directory in line 11 of the programa, any directory with any cars fotos can be tested.
+
+==========================================================
+
+HSV version:
+
+Execute the python program:
+
+CarsColor_YoloV8n_Min_Distance.py
+
+The photos are shown, to test it, and after close them in console appears the r g b assigned by the max of histograms and the r g b and name of color aproximated in the list of colors in colors.csv.
+
+It also produces the file CarColorResultsHSV.txt so that the results can be scored.
+
+Appears the name of the photo  (it matches the license plate of the car) the rgb obtained by applying the maximum histogram of each HSV component and the approximate RGB in the list of colors in color.csv, as well as the name of this color
+
+The results may be tested with  https://www.rapidtables.com/web/color/RGB_Color.html
+
+00004,78,148,217,73,151,208,"Celestial Blue"
+
+01702,105,158,0,86,130,3,"Avocado"
+
+2122267,252,252,250,255,250,250,"Snow"
+
+6662GKS,19,17,28,26,17,16,"Licorice"   Error: the calculated RGB is correct but when approaching with a minimum distance it gives an 
+                                       incorrect RGB. The true color is a dark blue, although in the photo it appears as black
+
+8544,13,16,19,16,12,8,"Smoky Black"
+
+8544,253,254,255,255,255,255,"White"
+
+8544,253,254,255,255,255,255,"White"      ( Duplicate, the detection recognizes 8544 as car and truck at the same time)
+
+BMW,23,28,34,26,36,33,"Dark Jungle Green" Error: the calculated RGB is correct but when approaching with a minimum distance it gives an 
+                                           incorrect RGB near green dark
+
+CRAIG,249,207,122,255,200,124,"Topaz"
+
+CY110KS,200,201,203,196,195,208,"Lavender Gray"
+
+DRUNK,0,60,255,2,71,254,"Blue (Ryb)"
+
+GCP332,139,197,255,135,206,250,"Light Sky Blue"
+
+GN64OTP,254,178,0,255,179,0,"Ucla Gold"
+
+GN64OTP,1,1,1,0,0,0,"Black"                          ( Error detecting car)
+
+HF3461,13,13,15,16,12,8,"Smoky Black"
+
+LR33TEE,255,0,8,255,0,0,"Red"
+
+VIPER,214,112,86,203,109,81,"Copper Red"
+
 
 References:
 
