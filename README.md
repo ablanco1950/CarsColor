@@ -11,6 +11,8 @@ cvzone
 
 math
 
+colorsys
+
 can be installed with a simple pip, if you get the message that you cannot import it
 
 The project uses the colors.csv file downloaded from https://github.com/codebrainz/color-names/blob/master/output/colors.csv
