@@ -59,9 +59,7 @@ LR33TEE,255,3,5,255,0,0,"Red"
 
 VIPER,214,94,24,210,105,30,"Cocoa Brown"
 
- Before 21/08/2023 there was a more complicated procedure that was abandoned after reading the recent article https://medium.com/@shaw801796/your-first-object-detection-model-using-yolo-2e841547cc20  
-
-Changing the name directory in line 11 of the programa, any directory with any cars fotos can be tested.
+ Changing the name directory in line 11 of the programa, any directory with any cars fotos can be tested.
 
 ==========================================================
 
@@ -69,7 +67,7 @@ HSV version:
 
 Execute the python program:
 
-CarsColor_YoloV8n_Min_Distance.py
+CarsColor_YoloV8n_Min_DistanceHSV.py
 
 The photos are shown, to test it, and after close them in console appears the r g b assigned by the max of histograms and the r g b and name of color aproximated in the list of colors in colors.csv.
 
@@ -128,6 +126,9 @@ https://www.rapidtables.com/web/color/RGB_Color.html
 
 
 =======================================================================================================================
+
+Before 21/08/2023 there was a more complicated procedure that was abandoned after reading the recent article https://medium.com/@shaw801796/your-first-object-detection-model-using-yolo-2e841547cc20  
+
 OPERATION  BEFORE THE  21/08/2023
 
 It  used the best.pt model that serves to frame the cars in the photos (to see details of its creation with yolov8 see the project
