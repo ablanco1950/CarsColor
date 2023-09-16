@@ -94,7 +94,8 @@ The results may be tested with  https://www.rapidtables.com/web/color/RGB_Color.
 
 2122267,252,252,250,255,250,250,"Snow"
 
-6662GKS,19,17,28,26,17,16,"Licorice"   Error: the calculated RGB is correct but when approaching with a minimum distance it gives an 
+6662GKS,19,17,28,26,17,16,"Licorice"   Error:
+the calculated RGB is correct but when approaching with a minimum distance it gives an 
                                        incorrect RGB. The true color is a dark blue, although in the photo it appears as black
 
 8544,13,16,19,16,12,8,"Smoky Black"
