@@ -27,6 +27,8 @@ CarsColor_YoloV8n_Min_Distance.py
 
 The photos are shown, to test it, and after close them in console appears the r g b assigned by the max of histograms and the r g b and name of color aproximated in the list of colors in colors.csv.
 
+The photo of the car also appears on the screen and the points that have been considered to establish the color, which are the ROI or region of maximum interest, are marked with white dots.
+
 It also produces the file CarColorResults.txt so that the results can be scored.
 
 Appears the name of the photo  (it matches the license plate of the car) the rgb obtained by applying the maximum histogram of each RGB component and the approximate RGB in the list of colors in color.csv, as well as the name of this color
@@ -83,6 +85,8 @@ Execute the python program:
 CarsColor_YoloV8n_Min_DistanceHSV.py
 
 The photos are shown, to test it, and after close them in console appears the r g b assigned by the max of histograms and the r g b and name of color aproximated in the list of colors in colors.csv.
+
+The photo is also presented trying to delimit the region of maximum ROI interest, although in this case it is quite blurry.
 
 It also produces the file CarColorResultsHSV.txt so that the results can be scored.
 
