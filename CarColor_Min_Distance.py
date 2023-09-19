@@ -24,6 +24,7 @@ def CarColorImg_Min_Distance(img, model, TabNames, License):
          
          img0=img[:, :, 0]
          counts, pixels, Valor0=ValorMaxHistogram(img0)
+         img[:, :, 0]=np.where(img[:, :, 0]==Valor0, 255, img[:, :, 0])
          #https://stackoverflow.com/questions/57398643/how-to-extract-individual-channels-from-an-rgb-image
          # valor 0 is b, valor 1 is g , valor 2 is r
          # hay que invertir el orden para que sea r g b
@@ -42,6 +43,7 @@ def CarColorImg_Min_Distance(img, model, TabNames, License):
          """
          img1=img[:, :, 1]
          counts, pixels, Valor1=ValorMaxHistogram(img1)
+         img[:, :, 1]=np.where(img[:, :, 1]==Valor1, 255, img[:, :, 1])
          """
          print("Valor 1 Green = " + str(Valor1))        
          pixels = pixels[:-1]
@@ -52,6 +54,7 @@ def CarColorImg_Min_Distance(img, model, TabNames, License):
          """
          img2=img[:, :, 2]
          counts, pixels, Valor2=ValorMaxHistogram(img2)
+         img[:, :, 2]=np.where(img[:, :, 2]==Valor2, 255, img[:, :, 2])
          """
          print("Valor 2 red= " + str(Valor2))        
          pixels = pixels[:-1]
@@ -60,7 +63,8 @@ def CarColorImg_Min_Distance(img, model, TabNames, License):
          plt.xlim(0, 256)
          plt.show()
          """
-        
+         cv2.imshow("ROI", img)
+         cv2.waitKey()
          
          x_test=[]
          x_test.append(Valor2)

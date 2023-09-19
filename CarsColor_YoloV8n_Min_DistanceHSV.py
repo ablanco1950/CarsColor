@@ -127,8 +127,8 @@ def DetectCarWithYolov8n (img):
              cv2.waitKey()
              cropLicense=SalvaImg[y1:y2,x1:x2]
              
-             cv2.imshow("Crop", cropLicense)
-             cv2.waitKey(0)
+             #cv2.imshow("Crop", cropLicense)
+             #cv2.waitKey(0)
              TabcropLicense.append(cropLicense)
              y.append(y1)
              yMax.append(y2)
@@ -159,9 +159,14 @@ for linea in f:
    
         z=z+1
         if z==6: break
+
+        
         
         linea_x.append(int(lineadelTrain[z]))
-  
+        
+        # Normalization don´t improve
+        #Norm=float(lineadelTrain[z])/255.0
+        #linea_x.append(Norm)
     arr.append(linea_x)
     arry.append(int(Conta))
     Conta=Conta+1
@@ -177,8 +182,10 @@ Name=np.array(arrname)
 
 imagesComplete, Licenses=loadimagesRoboflow(dirname)
 
+# # http://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsClassifier.html
 from sklearn.neighbors import KNeighborsClassifier
 modelKNN = KNeighborsClassifier(n_neighbors=1)
+
 modelKNN.fit(X_train,Y_train)
 print("Number of imagenes : " + str(len(imagesComplete)))
 
@@ -219,7 +226,11 @@ with open( "CarColorResultsHSV.txt" ,"w") as  w:
                  #print(X_train[Y_elected])
                  rgb= "("+str(R)+","+str(G)+","+ str(B)+")"
                  print(License + " Color code rgb " + rgb)
-         
+                 
+                 #Normalization don´t improve
+                 #R_elected=int(X_elected[0]*255.0)
+                 #G_elected=int(X_elected[1]*255.0)
+                 #B_elected=int(X_elected[2]* 255.0)
 
                  R_elected=X_elected[0]
                  G_elected=X_elected[1]

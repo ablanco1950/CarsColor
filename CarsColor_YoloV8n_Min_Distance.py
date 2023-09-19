@@ -127,8 +127,8 @@ def DetectCarWithYolov8n (img):
              cv2.waitKey()
              cropLicense=SalvaImg[y1:y2,x1:x2]
              
-             cv2.imshow("Crop", cropLicense)
-             cv2.waitKey(0)
+             #cv2.imshow("Crop", cropLicense)
+             #cv2.waitKey(0)
              TabcropLicense.append(cropLicense)
              y.append(y1)
              yMax.append(y2)

@@ -38,13 +38,15 @@ def CarColorImg_Min_Distance(img, model, TabNames, License):
          # https://stackoverflow.com/questions/17185151/how-to-obtain-a-single-channel-value-image-from-hsv-image-in-opencv-2-1
          img0=img[:, :, 0]
          counts, h=ValorMaxHistogram(img0)
+         img[:, :, 0]=np.where(img[:, :, 0]==h, 180, img[:, :, 0])
         
          img1=img[:, :, 1]
          counts,  s=ValorMaxHistogram(img1)
+         img[:, :, 1]=np.where(img[:, :, 1]==s, 255, img[:, :, 1])
          
          img2=img[:, :, 2]
          counts,  v=ValorMaxHistogram(img2)
-         
+         img[:, :, 2]=np.where(img[:, :, 2]==v, 255, img[:, :, 2])
          print(" Calculated H S V values h =" + str(h)+ " s = " + str(s) + " v = " + str(v))
          # https://stackoverflow.com/questions/24852345/hsv-to-rgb-color-conversion
 
@@ -52,7 +54,8 @@ def CarColorImg_Min_Distance(img, model, TabNames, License):
          # that colorsys needs
          # https://www.lifewire.com/what-is-hsv-in-design-1078068
          
-
+         cv2.imshow("ROI", img)
+         cv2.waitKey()
          # Max value of hue h is 180 if opencv is used
          # https://stackoverflow.com/questions/16685707/why-is-the-range-of-hue-0-180-in-opencv
          h=h/180.0
@@ -69,6 +72,10 @@ def CarColorImg_Min_Distance(img, model, TabNames, License):
          print("Calculated RGB values R =" + str(r)+ " G = " + str(g) + " B = " + str(b))
          
          x_test=[]
+         # normalization dont impruve
+         #x_test.append(r/255.0)
+         #x_test.append(g/255.0)
+         #x_test.append(b/255.0)
          x_test.append(r)
          x_test.append(g)
          x_test.append(b)
