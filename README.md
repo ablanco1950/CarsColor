@@ -55,15 +55,15 @@ BMW,21,27,34,26,36,33,"Dark Jungle Green"     Error: the calculated RGB is corre
 
 CRAIG,249,211,123,248,222,126,"Mellow Yellow"
 
-CY110KS,200,201,203,196,195,208,"Lavender Gray"   (Error, the car looks white, perhaps the shadow)
+CY110KS,200,201,203,196,195,208,"Lavender Gray"   
 
 DRUNK,8,26,100,0,35,102,"Royal Blue (Traditional)"
 
-GCP332,24,131,255,30,144,255,"Dodger Blue"   (Error)
+GCP332,24,131,255,30,144,255,"Dodger Blue"   
 
 GN64OTP,254,254,254,255,255,255,"White"
 
-GN64OTP,1,1,1,0,0,0,"Black"              (error detecting car)
+GN64OTP,1,1,1,0,0,0,"Black"              (program error when setting the region of interest (ROI))
 
 HF3461,15,14,15,16,12,8,"Smoky Black"
 
@@ -100,8 +100,7 @@ The results may be tested with  https://www.rapidtables.com/web/color/RGB_Color.
 
 2122267,252,252,250,255,250,250,"Snow"
 
-6662GKS,19,17,28,26,17,16,"Licorice" Error: the calculated RGB is correct but when approaching with a minimum distance it gives an 
-                                       incorrect RGB. The true color is a dark blue, although in the photo it appears as black
+6662GKS,19,17,28,26,17,16,"Licorice" 
 
 8544,13,16,19,16,12,8,"Smoky Black"
 
@@ -120,7 +119,7 @@ DRUNK,0,60,255,2,71,254,"Blue (Ryb)"
 
 GCP332,139,197,255,135,206,250,"Light Sky Blue"
 
-GN64OTP,254,178,0,255,179,0,"Ucla Gold"
+GN64OTP,254,178,0,255,179,0,"Ucla Gold"        (program error when setting the region of interest (ROI))
 
 GN64OTP,1,1,1,0,0,0,"Black"                          ( Error detecting car)
 
