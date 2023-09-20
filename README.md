@@ -1,7 +1,7 @@
 # CarsColor
 Project that from photos of cars, estimates its detailed colors (not basic colors) based on the maximum values of the R G B histograms of the photo. A version that uses the same method with HSV values is also provided.
 
-Some systems calculate the color of the car only from the color of the center point of its image. Considering the histogram, it is calculated based on the points that are the majority with a certain color
+Some systems calculate the color of the car only from the color of the center point of its image (a program that uses this method for verification is attached). Considering the histogram, it is calculated based on the points that are the majority with a certain color
 
 All necessary packages besides:
 
