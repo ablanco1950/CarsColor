@@ -72,8 +72,6 @@ LR33TEE,255,3,5,255,0,0,"Red"
 VIPER,214,94,24,210,105,30,"Cocoa Brown"
 
 
-
-
  Changing the name directory in line 11 of the programa, any directory with any cars fotos can be tested.
 
 ==========================================================
@@ -130,6 +128,11 @@ LR33TEE,255,0,8,255,0,0,"Red"
 VIPER,214,112,86,203,109,81,"Copper Red"
 
 Changing the name directory in line 11 of the programa, any directory with any cars fotos can be tested.
+
+==========
+Also attached is the CarsColor_YoloV8n_Min_Distance_WithOutHistogram.py program that determines the color of the car based on the color of the center point of the photo. When you run the program, the ROI (point of interest) appears surrounded by a green circle (the results are bad and the central point sometimes coincides with the headlights, windshield, radiators or other points of the car that are not significant for determining its color).
+
+=======
 
 References:
 
