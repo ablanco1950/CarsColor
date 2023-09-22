@@ -23,7 +23,7 @@ Unzip the Test1 file with the test images (obtained from Roboflow and Kaggle)
 
 Execute the python program:
 
-CarsColor_YoloV8n_Min_Distance.py
+CarsColor_YoloV8x_Min_Distance.py
 
 The photos are shown, to test it, and after close them in console appears the r g b assigned by the max of histograms and the r g b and name of color aproximated in the list of colors in colors.csv.
 
@@ -31,7 +31,7 @@ The photo of the car also appears on the screen and the points that have been co
 
 It also produces the file CarColorResults.txt so that the results can be scored.
 
-Appears the name of the photo  (it matches the license plate of the car) the rgb obtained by applying the maximum histogram of each RGB component and the approximate RGB in the list of colors in color.csv, as well as the name of this color
+In the CarColorResults.txt appears the name of the photo  (it matches the license plate of the car) the rgb obtained by applying the maximum histogram of each RGB component and the approximate RGB in the list of colors in color.csv, as well as the name of this color
 
 The results may be tested with  https://www.rapidtables.com/web/color/RGB_Color.html
 
