@@ -35,44 +35,43 @@ In the CarColorResults.txt appears the name of the photo  (it matches the licens
 
 The results may be tested with  https://www.rapidtables.com/web/color/RGB_Color.html
 
-00004,57,142,217,49,140,231,"Bleu De France"
+00004,57,142,217,49,140,231,Bleu De France
 
-01702,116,158,44,107,142,35,"Olive Drab (Web) (Olive Drab #3)"
+01702,116,158,44,107,142,35,Olive Drab (Web) (Olive Drab #3)
 
-2122267,251,252,249,255,250,250,"Snow"
+2122267,251,252,249,240,255,240,Honeydew
 
-6662GKS,25,24,28,26,36,33,"Dark Jungle Green" Error: the calculated RGB is correct but when approaching with a minimum distance it gives 
-                                               an  incorrect RGB. The true color is a dark blue, although in the photo it appears as black
+6662GKS,25,24,28,25,25,112,Midnight Blue
 
-8544,12,16,19,16,12,8,"Smoky Black"
+8544,12,16,19,0,33,71,Oxford Blue
 
-8544,254,255,255,255,255,255,"White"
+8544,254,255,255,245,255,250,Mint Cream
 
-8544,254,255,255,255,255,255,"White"         ( Duplicate, the detection recognizes 8544 as car and truck at the same time)
+8544,255,255,255,255,255,255,White
 
-BMW,21,27,34,26,36,33,"Dark Jungle Green"     Error: the calculated RGB is correct but when approaching with a minimum distance it gives 
-                                              an incorrect RGB near green dark
+BMW,21,27,34,0,33,71,Oxford Blue
 
-CRAIG,249,211,123,248,222,126,"Mellow Yellow"
+CRAIG,249,211,123,248,222,126,Mellow Yellow
 
-CY110KS,200,201,203,196,195,208,"Lavender Gray"   
+CY110KS,200,201,203,174,198,207,Pastel Blue
 
-DRUNK,8,26,100,0,35,102,"Royal Blue (Traditional)"
+DRUNK,8,26,100,0,35,102,Royal Blue (Traditional)
 
-GCP332,24,131,255,30,144,255,"Dodger Blue"   
+GCP332,24,131,255,30,144,255,Dodger Blue
 
-GN64OTP,254,254,254,255,255,255,"White"
+GN64OTP,254,254,254,255,255,255,White
 
-GN64OTP,1,1,1,0,0,0,"Black"              (program error when setting the region of interest (ROI))
+GN64OTP,1,1,1,0,0,0,Black           (error detection)
 
-HF3461,15,14,15,16,12,8,"Smoky Black"
+HF3461,15,14,15,72,6,7,Bulgarian Rose
 
-LR33TEE,255,3,5,255,0,0,"Red"
+LR33TEE,255,3,5,232,0,13,Ku Crimson
 
-VIPER,214,94,24,210,105,30,"Cocoa Brown"
+VIPER,214,94,24,210,105,30,Cocoa Brown
 
 
- Changing the name directory in line 11 of the programa, any directory with any cars fotos can be tested.
+
+ Changing the name directory in line 19 of the programa, any directory with any cars fotos can be tested.
 
 ==========================================================
 
@@ -80,7 +79,7 @@ HSV version:
 
 Execute the python program:
 
-CarsColor_YoloV8n_Min_DistanceHSV.py
+CarsColor_YoloV8x_Min_DistanceHSV.py
 
 The photos are shown, to test it, and after close them in console appears the r g b assigned by the max of histograms and the r g b and name of color aproximated in the list of colors in colors.csv.
 
@@ -92,42 +91,42 @@ Appears the name of the photo  (it matches the license plate of the car) the rgb
 
 The results may be tested with  https://www.rapidtables.com/web/color/RGB_Color.html
 
-00004,78,148,217,73,151,208,"Celestial Blue"
+00004,78,148,217,73,151,208,Celestial Blue
 
-01702,105,158,0,86,130,3,"Avocado"
+01702,105,158,0,86,130,3,Avocado
 
-2122267,252,252,250,255,250,250,"Snow"
+2122267,252,252,250,255,250,250,Snow
 
-6662GKS,19,17,28,26,17,16,"Licorice" 
+6662GKS,19,17,28,25,25,112,Midnight Blue
 
-8544,13,16,19,16,12,8,"Smoky Black"
+8544,13,16,19,0,33,71,Oxford Blue
 
-8544,253,254,255,255,255,255,"White"
+8544,253,254,255,240,248,255,Alice Blue
 
-8544,253,254,255,255,255,255,"White"      ( Duplicate, the detection recognizes 8544 as car and truck at the same time)
+8544,253,254,255,240,248,255,Alice Blue
 
-BMW,23,28,34,26,36,33,"Dark Jungle Green" Error: the calculated RGB is correct but when approaching with a minimum distance it gives an 
-                                           incorrect RGB near green dark
+BMW,23,28,34,0,33,71,Oxford Blue
 
-CRAIG,249,207,122,255,200,124,"Topaz"
+CRAIG,249,207,122,255,200,124,Topaz
 
-CY110KS,200,201,203,196,195,208,"Lavender Gray"
+CY110KS,200,201,203,174,198,207,Pastel Blue
 
-DRUNK,0,60,255,2,71,254,"Blue (Ryb)"
+DRUNK,0,60,255,2,71,254,Blue (Ryb)
 
-GCP332,139,197,255,135,206,250,"Light Sky Blue"
+GCP332,139,197,255,135,206,250,Light Sky Blue
 
-GN64OTP,254,178,0,255,179,0,"Ucla Gold"        (program error when setting the region of interest (ROI))
+GN64OTP,254,178,0,255,179,0,Ucla Gold     (error)
 
-GN64OTP,1,1,1,0,0,0,"Black"                          ( Error detecting car)
+GN64OTP,1,1,1,0,0,0,Black                  (error detection )
 
-HF3461,13,13,15,16,12,8,"Smoky Black"
+HF3461,13,13,15,25,25,112,Midnight Blue
 
-LR33TEE,255,0,8,255,0,0,"Red"
+LR33TEE,255,0,8,232,0,13,Ku Crimson
 
-VIPER,214,112,86,203,109,81,"Copper Red"
+VIPER,214,112,86,226,114,91,Terra Cotta
 
-Changing the name directory in line 11 of the programa, any directory with any cars fotos can be tested.
+
+Changing the name directory in line 19 of the programa, any directory with any cars fotos can be tested.
 
 ==========
 Also attached is the CarsColor_YoloV8n_Min_Distance_WithOutHistogram.py program that determines the color of the car based on the color of the center point of the photo. When you run the program, the ROI (point of interest) appears surrounded by a green circle (the results are bad and the central point sometimes coincides with the headlights, windshield, radiators or other points of the car that are not significant for determining its color).
